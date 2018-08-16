@@ -6,7 +6,7 @@ nextjs-heroku-demo
 3. Git setup `git init && (echo node_modules/ && echo .next/) >> .gitignore`
 4. Add code `mkdir pages && touch pages/index.js`
 5. Create Heroku app `heroku create`
-6. Tell it how to run by adding following in 
+6. Tell it how to run by adding following in `package.json` and then test it locally with `npm run dev`
     ```
     {
       "scripts": {
@@ -23,3 +23,4 @@ nextjs-heroku-demo
     git commit -m 'Next.js app on Heroku'
     git push heroku master
     ```
+7. Open the app with `heroku open`.
